@@ -1,0 +1,60 @@
+<!-- 
+	Shopping Cart
+	-------------
+	Instead of creating a static shopping list with paper and a pen, create it dynamically. Take the list item and the price from the user and further find the grand total.
+
+	Details:
+	1. Two input fields should be displayed that take name and price as input
+	2. A button with innerText Add should be rendered
+	3. When the add button is clicked, list should be updated and rendered through a table
+	4. data-ns-test="item-name" and data-ns-test="item-price" should be used to label name and price in table
+	5. item-name-input and item-price-input should be used as id for name and price input fields
+	6. Total price of all elements in the list should be displayed in an element with data-ns-test="grandTotal". This element should only have the value of the total and no other string.
+	7. Input fields should be cleared once element has been added to the list
+	8. Initially, table should have only one row with grandTotal as 0
+	9. Invalid input should not be accepted
+
+	Submission :
+	Create a folder named `ajs_assignment4`
+	Compress your folder to zip format and submit it
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shopping Cart</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="div">
+            <form action="#" method="POST">
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter goods name"
+                    required
+                />
+                <input
+                    type="number"
+                    id="price"
+                    placeholder="Enter price"
+                    required
+                />
+                <div class="btn">
+                    <button type="button" id="add-btn">Add</button>
+                    <button type="button" id="total-btn">Grand Total</button>
+                </div>
+            </form>
+            <div class="line"></div>
+            <table id="display-table">
+                <tr class="heading">
+                    <th>Goods</th>
+                    <th>Price</th>
+                </tr>
+            </table>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>
